@@ -6,6 +6,19 @@ import { useI18n } from '@/hooks/web/useI18n'
 
 const { t } = useI18n()
 
+// let x = {
+//   path: '/login',
+//   component: () => import('@/views/Login/Login.vue'),
+//   name: 'Login',
+//   meta: {
+//     hidden: true,
+//     title: t('router.login'),
+//     noTagsView: true
+//   }
+// }
+
+// console.log(x.meta.title)
+
 export const constantRouterMap: AppRouteRecordRaw[] = [
   {
     path: '/',

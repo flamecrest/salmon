@@ -32,6 +32,7 @@ const getIconifyStyle = computed(() => {
     color
   }
 })
+console.log("here is icon")
 </script>
 
 <template>

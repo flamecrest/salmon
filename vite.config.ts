@@ -52,10 +52,10 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
           }
         }]
       }),
-      EslintPlugin({
-        cache: false,
-        include: ['src/**/*.vue', 'src/**/*.ts', 'src/**/*.tsx'] // 检查的文件
-      }),
+      // EslintPlugin({
+      //   cache: false,
+      //   include: ['src/**/*.vue', 'src/**/*.ts', 'src/**/*.tsx'] // 检查的文件
+      // }),
       VueI18nPlugin({
         runtimeOnly: true,
         compositionOnly: true,
@@ -66,7 +66,7 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
         symbolId: 'icon-[dir]-[name]',
         svgoOptions: true
       }),
-      PurgeIcons(),
+      // PurgeIcons(),
       viteMockServe({
         ignore: /^\_/,
         mockPath: 'mock',
